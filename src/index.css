@@ -6,8 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./world.jpeg");
-  backdrop-filter: blur(10px);
+  background-image: url("./worldimg.jpg");
+  backdrop-filter: blur(1px);
 }
 
 select {
@@ -52,14 +52,19 @@ select:-moz-focusring {
   text-shadow: 0 0 0 #000;
 }
 
+option {
+  background-color: #4F4B51;
+  color: white;
+}
+
 h1 {
   word-spacing: 10px;
   letter-spacing: 5px;
   color: white;
   background-color: #5d7cd0;
-  width: 100%;
+  width: 30rem;
   margin: 0 auto 2rem auto;
-  max-width: 50rem;
+  max-width: 30rem;
   border-radius: 20px;
 }
 
