@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  color: #000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./world.jpeg");
+  backdrop-filter: blur(10px);
+}
+
+select {
+  border: thin solid #5d7cd0;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 2.5em;
+  font-size: 20px;
+  padding: 0.5em 3.5em 0.5em 1em;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+select.classic {
+  background-image: linear-gradient(45deg, transparent 50%, #5d7cd0 50%),
+    linear-gradient(135deg, #5d7cd0 50%, transparent 50%),
+    linear-gradient(to right, skyblue, skyblue);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+select.classic:focus {
+  background-image: linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    linear-gradient(to right, gray, gray);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+  border-color: grey;
+  outline: 0;
+}
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+h1 {
+  word-spacing: 10px;
+  letter-spacing: 5px;
+  color: white;
+  background-color: #5d7cd0;
+  width: 100%;
+  margin: 0 auto 2rem auto;
+  max-width: 50rem;
+  border-radius: 20px;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 50px;
+}
+
+.analog {
+  background-color: #5d7cd0;
+  padding: 10px;
+  border-radius: 29px;
+  color: white;
+  font-size: xx-large;
+}
+
+.digital {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: black;
+  font-size: xx-large;
+  font-weight: bolder;
+  border: 2px solid #5d7cd0;
+  padding: 10px;
+  border-radius: 20px;
+}
